@@ -24,6 +24,8 @@
 
 #include "ui_navigation.hpp"
 
+#include "activation_app.hpp"
+
 #include "event_m0.hpp"
 #include "portapack_persistent_memory.hpp"
 #include "portapack_shared_memory.hpp"
@@ -118,6 +120,8 @@ const NavigationView::AppList NavigationView::appList = {
     //{"testapp", "Test App", UTILITIES, Color::dark_grey(), nullptr, new ViewFactory<TestView>()},
     // Dangerous apps.
     {nullptr, "Flash Utility", UTILITIES, Color::red(), &bitmap_icon_peripherals_details, new ViewFactory<FlashUtilityView>()},
+    /* CUSTOM ***************************************************************/
+    {"activation", "Activation", HOME, Color::yellow(), &bitmap_icon_games, new ViewFactory<ActivationView>()},
 };
 
 bool NavigationView::StartAppByName(const char* name) {
