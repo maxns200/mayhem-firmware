@@ -284,6 +284,7 @@ set(CPPSRC
 	apps/ble_tx_app.cpp
 	apps/capture_app.cpp
 	apps/pocsag_app.cpp
+	apps/activation/activation_app.cpp
 	apps/ui_about_simple.cpp
 	apps/ui_battinfo.cpp
 	apps/ui_bmp_file_viewer.cpp
